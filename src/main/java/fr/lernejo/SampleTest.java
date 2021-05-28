@@ -9,11 +9,11 @@ public class SampleTest {
     void op_test() {
         Sample sample = new Sample();
 
-        int a = 5;
+        int a = 2;
         int b = 10;
 
-        int expectedAdd = 15;
-        int expectedMul = 50;
+        int expectedAdd = 12;
+        int expectedMul = 20;
 
         Assertions.assertThat(sample.op(Sample.Operation.ADD, a, b))
             .isEqualTo(expectedAdd);
@@ -34,7 +34,7 @@ public class SampleTest {
     void fact_calc() {
         Sample sample = new Sample();
 
-        Assertions.assertThat(sample.fact(10))
-            .isEqualTo(3628800);
+        Assertions.assertThat(sample.fact(5))
+            .isEqualTo(120);
     }
 }
